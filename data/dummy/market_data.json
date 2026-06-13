@@ -1,0 +1,67 @@
+{
+  "as_of_date": "2026-06-13",
+  "comment": "Realistic market levels calibrated to Jun 2026",
+
+  "swap_curve": {
+    "comment": "USD OIS continuously compounded rates",
+    "1":  0.0432,
+    "2":  0.0418,
+    "3":  0.0401,
+    "5":  0.0385,
+    "7":  0.0379,
+    "10": 0.0371
+  },
+
+  "spread_curves": {
+    "VOD": {
+      "name": "Vodafone Group PLC",
+      "rating": "BBB-",
+      "sector": "TMT",
+      "recovery": 0.40,
+      "comment": "IG single name - realistic BBB- levels",
+      "1":  45,
+      "2":  65,
+      "3":  90,
+      "5":  120,
+      "7":  145,
+      "10": 170
+    },
+    "XOVER": {
+      "name": "iTraxx Crossover Series 43 5Y",
+      "rating": "HY Index",
+      "recovery": 0.40,
+      "comment": "Calibrated to current market ~310bps",
+      "1":  180,
+      "2":  230,
+      "3":  265,
+      "5":  310,
+      "7":  340,
+      "10": 375
+    },
+    "TSLA": {
+      "name": "Tesla Inc",
+      "rating": "BB+",
+      "sector": "Autos",
+      "recovery": 0.40,
+      "comment": "HY single name",
+      "1":  120,
+      "2":  180,
+      "3":  230,
+      "5":  290,
+      "7":  320,
+      "10": 355
+    },
+    "DISTRESSED": {
+      "name": "Distressed Entity (Synthetic)",
+      "rating": "CCC",
+      "recovery": 0.25,
+      "comment": "Wide spreads to test curve behaviour under stress",
+      "1":  800,
+      "2":  1000,
+      "3":  1200,
+      "5":  1500,
+      "7":  1700,
+      "10": 1900
+    }
+  }
+}

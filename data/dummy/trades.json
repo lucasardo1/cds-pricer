@@ -1,0 +1,60 @@
+{
+  "comment": "Sample CDS trades for development and testing",
+  "trades": [
+    {
+      "id": "TRD001",
+      "name": "Vodafone 5Y IG",
+      "entity": "VOD",
+      "trade_date": "2026-06-13",
+      "maturity": "2031-06-20",
+      "notional": 10000000,
+      "coupon_bps": 100,
+      "recovery_rate": 0.40,
+      "position": "protection_buyer"
+    },
+    {
+      "id": "TRD002",
+      "name": "iTraxx XOVER 5Y",
+      "entity": "XOVER",
+      "trade_date": "2026-06-13",
+      "maturity": "2031-06-20",
+      "notional": 10000000,
+      "coupon_bps": 500,
+      "recovery_rate": 0.40,
+      "position": "protection_buyer"
+    },
+    {
+      "id": "TRD003",
+      "name": "Tesla 5Y HY",
+      "entity": "TSLA",
+      "trade_date": "2026-06-13",
+      "maturity": "2031-06-20",
+      "notional": 5000000,
+      "coupon_bps": 500,
+      "recovery_rate": 0.40,
+      "position": "protection_buyer"
+    },
+    {
+      "id": "TRD004",
+      "name": "Vodafone 3Y short dated",
+      "entity": "VOD",
+      "trade_date": "2026-06-13",
+      "maturity": "2029-06-20",
+      "notional": 10000000,
+      "coupon_bps": 100,
+      "recovery_rate": 0.40,
+      "position": "protection_seller"
+    },
+    {
+      "id": "TRD005",
+      "name": "Distressed Entity 5Y",
+      "entity": "DISTRESSED",
+      "trade_date": "2026-06-13",
+      "maturity": "2031-06-20",
+      "notional": 2000000,
+      "coupon_bps": 500,
+      "recovery_rate": 0.25,
+      "position": "protection_buyer"
+    }
+  ]
+}
