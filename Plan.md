@@ -1,9 +1,5 @@
 # Build Plan
 
-Strict order — do not skip ahead.
-
----
-
 ## Phase 1 — Schedule (schedule.py)
 
 The foundation. Everything else depends on correct payment dates.
