@@ -24,3 +24,5 @@ data/real/*
 # VS Code
 .vscode/
 outputs/*.png
+
+NOTES.md
