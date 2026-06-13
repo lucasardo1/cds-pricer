@@ -204,8 +204,12 @@ class SurvivalCurve:
                     tenor, spread, trial_tenors, trial_hazards
                 )
 
-            # Brentq: find lam in [1e-6, 1.0] where npv(lam) = 0
-            lam = brentq(npv, 1e-6, 1.0, xtol=1e-10, rtol=1e-10)
+            # Brentq: find lam in [1e-6, 10.0] where npv(lam) = 0
+            try:
+                lam = brentq(npv, 1e-6, 10.0, xtol=1e-10, rtol=1e-10)
+            except ValueError:
+                # Fallback: use flat hazard rate approximation
+                lam = self._spreads[i] / (1 - self._recovery)
             hazards.append(lam)
 
         return hazards
